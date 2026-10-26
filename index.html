@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Регистрация на курс</h1>
+        <form action="/register" method="post">
+            <label for="name">Имя</label>
+            <input type="text" id="name"  placeholder="Введите имя" name="name"><br>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" type="text"placeholder="Введите фамилию"> <br>
+            <label for="city">Город</label>
+            <input type="text" id="city" type="text"placeholder="Введите город"> <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" type="text"placeholder="Введите свой email" size="20"> <br>
+            <label for="tel">Телефон</label>
+            <input type="tel" id="tel" type="text"placeholder="Введите свой номер телефона" size="30"> <br>
+            <label for="date">Дата рождения</label>
+            <input type="date" id="tel"> <br>
+            <label for="number">Возраст</label>
+            <input type="number" id="numbe" type="text"placeholder="Введите свой возраст" size="30"> <br>
+            <label for="password">Пароль</label>
+            <input type="password" id="password"> <br> <br>
+
+            <label for="about">Почему вы хотите изучать веб-разработку?</label> <br>
+            <textarea id="about"name="about" placeholder=""></textarea> <br> <br>
+
+            <label for="course">Выберите курс</label> 
+            <select id="course" name="course">
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Мобильная разработка">Мобильная разработка</option>
+            </select> <br> <br>
+
+            <input type="radio"id="offline" name="format" value="offline">
+            <label for="offline">Офлайн</label>
+
+            <input type="radio"id="online" name="format" value="online">
+            <label for="online">Онлайн</label>
+
+            <input type="radio"id="hybrid" name="format" value="hybrid">
+            <label for="hybrid">Гибридный</label> <br> <br>
+
+            <label for="about">Какие технологии вам уже знакомы?</label> <br>
+            <input type="checkbox"id="html"name="skills"value="html">
+            <label for="html">HTML</label> <br>
+
+            <input type="checkbox"id="CSS"name="skills"value="CSS">
+            <label for="CSS">CSS</label> <br>
+
+            <input type="checkbox"id="JavaScript"name="skills"value="JavaScript">
+            <label for="JavaScript">JavaScript</label> <br>
+
+            <input type="checkbox"id="Git"name="skills"value="Git">
+            <label for="Git">Git</label> <br>
+
+            <input type="checkbox"id="Figma"name="skills"value="Figma">
+            <label for="Figma">Figma</label> <br> <br>
+            <input type="checkbox" id="accept" required>
+            <label for="accept">Я согласен с условиями обучения</label> <br>
+            <button type="submit"> Зарегистрироваться</button>
+
+
+        </form>
+    </div>
+</body>
+</html>
